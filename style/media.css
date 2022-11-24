@@ -1,0 +1,146 @@
+@media(max-width:1200px) {
+    .form {
+        padding: 37px 35px 19px;
+        row-gap: 20px;
+    }
+
+    .form__btn {
+        padding: 14px 30px;
+    }
+
+    .form input {
+        padding: 10px;
+        max-width: 220px;
+    }
+}
+
+@media(max-width:1020px) {
+    .header__card {
+        flex-shrink: 0;
+        scroll-snap-align: center;
+    }
+
+    .header__cards {
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        
+    }
+}
+
+@media(max-width:760px) {
+    .nav-btn {
+        display: flex;
+        justify-content: end;
+
+    }
+
+    .nav__list {
+        position: fixed;
+        flex-direction: column;
+        left: 0;
+        top: 0;
+        padding: 20px;
+        bottom: 0;
+        backdrop-filter: blur(15px);
+        transform: translateX(-110%);
+        width: 220px;
+        box-shadow: 7px 0px 14px 0px red;
+        transition: 0.4s;
+        gap: 15px;
+    }
+
+    .nav-btn:focus~.nav__list {
+        transform: translateX(0);
+
+    }
+
+    .nav {
+        margin-bottom: 390px;
+    }
+    .flights__cards{
+        display: inline;
+    }
+
+        .flights__cards-first,
+    .flights__cards-second{
+        margin: 0 auto;
+    }
+    .flights__cards-first{
+        margin-bottom: 30px;
+    }
+
+}
+
+@media(max-width:625px) {
+    .form  {
+        object-fit: contain;
+        flex-direction: column;
+    }
+
+
+    .form input {
+        max-width: 555px;
+    }
+    .header__span {
+        margin: auto;
+    }
+    .svg1 {
+        margin: 0 auto;
+        transform: rotate(90deg);
+    }
+
+    .form :nth-child(3),
+    .form :nth-child(4) {
+        margin-right: 10px;
+    }
+
+    .form {
+        padding: 30px 20px 18px;
+        row-gap: 17px;
+        align-items: stretch;
+    }
+    .nav {
+        margin-bottom: 350px;
+    }
+    .form__btn {
+        text-align: center;
+    }
+}
+@media(max-width:500px){
+    .nav__icon-btn {
+        display: none;
+    }
+    .nav__btn{
+        justify-content: flex-end;
+    }
+}
+@media(max-width:400px) {
+    .header__cards {
+        background: #EFEFEF;
+        border-radius: 10px;
+        display: flex;
+        column-gap: 8px;
+        padding: 24px 3px;
+    }
+
+    .header__card {
+        column-gap: 5px;
+    }
+
+    .header__card-text {
+        max-width: 178px;
+    }
+    .nav {
+        margin-bottom: 320px;
+    }
+    .nav__icons {
+        column-gap: normal;
+    }
+    .flights__title {
+        font-size: 30px;}
+}
+@media(max-width:350px){
+    .flights__title {
+        font-size: 27.5px;
+    }
+}
